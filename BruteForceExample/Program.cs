@@ -35,10 +35,8 @@
                     Array.Reverse(reply);
                     string revReply = new string(reply);
                     if (captcha == revReply)
-                    {
-                        count++;
                         break;
-                    }
+                    count++;
                 }
                 
                 for (int i = 0; i < pos.Length; i++)
